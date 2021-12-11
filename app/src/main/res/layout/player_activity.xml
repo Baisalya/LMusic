@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundimg"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".PlayerActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="-1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtsn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:text="Song name"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="431dp"
+            android:layout_height="238dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/musicx">
+
+
+        </ImageView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <SeekBar
+                android:id="@+id/seekbar"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp">
+
+            </SeekBar>
+            <TextView
+                android:id="@+id/txtsstart"
+                android:layout_toLeftOf="@+id/seekbar"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="false"
+                android:layout_marginLeft="20dp"
+                android:text="0:10"
+                android:textColor="@color/purple_700"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtsstop"
+                android:layout_toRightOf="@+id/seekbar"
+                android:layout_centerInParent="true"
+                android:layout_alignParentRight="false"
+                android:layout_marginRight="20dp"
+                android:text="0:10"
+                android:textColor="@color/purple_700"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_weight="0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/rewind"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_toLeftOf="@+id/markbtn"
+                android:background="@drawable/ic_5backward">
+
+            </Button>
+
+            <Button
+                android:id="@+id/markbtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_mark">
+
+            </Button>
+
+            <Button
+                android:id="@+id/forward"
+                android:background="@drawable/ic_5sec"
+                android:layout_toRightOf="@+id/markbtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp">
+
+            </Button>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_weight="4">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <Button
+                android:id="@+id/playbtn"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/ic_pause">
+
+
+            </Button>
+            <Button
+                android:id="@+id/btnnext"
+                android:layout_toRightOf="@+id/playbtn"
+                android:background="@drawable/ic_fast_forward"
+                android:layout_width="70dp"
+                android:layout_height="70dp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btnprev"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_toLeftOf="@+id/playbtn"
+                android:background="@drawable/ic_fast_rewind">
+
+            </Button>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

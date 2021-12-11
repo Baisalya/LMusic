@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LMusic</string>
+    <string name="song_name">Song name</string>
+    <string name="img">img</string>
+</resources>
